@@ -7,7 +7,7 @@ $url = parse_url(getenv("CLEARDB_DATABASE_URL"));
 $host = $url["host"];
 $username = $url["user"];
 $password = $url["pass"];
-$database = substr($url["path"], 1);
+$db = substr($url["path"], 1);
 
 
 return [
@@ -56,7 +56,7 @@ return [
             'url' => env('DATABASE_URL'),
             'host' => $host,
             'port' => env('DB_PORT', '3306'),
-            'database' => $database,
+            'database' => $db,
             'username' => $username,
             'password' => $password,
             'unix_socket' => env('DB_SOCKET', ''),
