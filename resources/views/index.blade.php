@@ -14,7 +14,7 @@
                 <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
                     <div class="books-item">
                         <div class="books-item-thumb">
-                            <img src="{{ secure_asset('storage/'.$product->image) }}" alt="{{ $product->title }}" style="width:100%; height:150px;">
+                            <img src="{{ $product->image }}" alt="{{ $product->title }}" style="width:100%; height:150px;">
                             <div class="new">New</div>
                             <div class="sale">Sale</div>
                             <div class="overlay overlay-books"></div>
