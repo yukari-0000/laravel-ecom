@@ -5,7 +5,7 @@
 use App\Product;
 use Faker\Generator as Faker;
 
-$factory->define(App\Product::class, function (Faker $faker) {
+$factory->define(App\Product::class, function (Faker\Generator\Generator $faker) {
     return [
         'title' => $faker->sentence(3),
         'content' => $faker->paragraph(2),
